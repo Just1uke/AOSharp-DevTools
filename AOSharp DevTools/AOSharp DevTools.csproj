@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7BB6CE13-D8B6-407F-BACA-98B5B56C2AB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevTools</RootNamespace>
+    <AssemblyName>DevTools</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AOSharp.Common">
+      <HintPath>..\..\..\..\AOSharp\aosharp\AOSharp.Core\bin\Debug\AOSharp.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AOSharp.Core">
+      <HintPath>..\..\..\..\AOSharp\aosharp\AOSharp.Core\bin\Debug\AOSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyHook">
+      <HintPath>..\..\..\..\AOSharp\aosharp\packages\EasyHook.2.7.6789\lib\net40\EasyHook.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControllerManager.cs" />
+    <Compile Include="GUIControllers\AboutController.cs" />
+    <Compile Include="GUIControllers\ControlPanelController.cs" />
+    <Compile Include="GUIControllers\Controller.cs" />
+    <Compile Include="DevTools.cs" />
+    <Compile Include="GUIControllers\EnumeratorsController.cs" />
+    <Compile Include="GUIControllers\Enumerators\DynamicIDController.cs" />
+    <Compile Include="GUIControllers\Enumerators\DynamicID\ProgramController.cs" />
+    <Compile Include="GUIControllers\Enumerators\DynamicID\KeyController.cs" />
+    <Compile Include="GUIControllers\Enumerators\DynamicID\HotspotController.cs" />
+    <Compile Include="GUIControllers\Enumerators\DynamicID\CommandController.cs" />
+    <Compile Include="GUIControllers\Enumerators\DynamicID\DestinationController.cs" />
+    <Compile Include="GUIControllers\Enumerators\DynamicID\PacketController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="GUIControllers\Enumerators\DynamicID\GFXController.cs" />
+    <Compile Include="GUIControllers\Modules\DisplaySystem_tController.cs" />
+    <Compile Include="GUIControllers\EventsController.cs" />
+    <Compile Include="GUIControllers\Modules\FlowControlModule_tController.cs" />
+    <Compile Include="GUIControllers\HelpController.cs" />
+    <Compile Include="GUIControllers\ModulesController.cs" />
+    <Compile Include="GUIControllers\Modules\SceneBase_tController.cs" />
+    <Compile Include="GUIControllers\Modules\VisualEnvFX_tController.cs" />
+    <Compile Include="GUIControllers\OptionsController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unmanaged\GUI\DisplaySystem_t.cs" />
+    <Compile Include="Unmanaged\GUI\DynamicID_t.cs" />
+    <Compile Include="Unmanaged\GUI\FlowControlModule_t.cs" />
+    <Compile Include="Unmanaged\GUI\SceneBase_t.cs" />
+    <Content Include="UI\Enumerators\DynamicID\TypeBitmap.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Managed\TiXml\" />
+    <Folder Include="Overwrites\GUI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UI\Enumerators.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Enumerators\DynamicID.xml" />
+    <Content Include="UI\Enumerators\DynamicID\GFX.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Enumerators\DynamicID\PACKETTYPE.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Enumerators\DynamicID\TypeText.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Events.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Modules\DisplaySystem_t.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Modules\FlowControlModule_t.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Help.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\ControlPanel.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\About.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Modules.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Modules\SceneBase_t.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Modules\VisualEnvFX_t.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Options.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\Temporary.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
