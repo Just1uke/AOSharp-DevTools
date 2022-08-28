@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<root>
+	<BorderView v_alignment="TOP" h_alignment="LEFT" view_layout="vertical" name="DevTools_FlowControlModule_t" layout_borders="Rect(0,0,0,2)" max_size="Point(16000,-1)">
+		<TextView value=" " layout_borders="Rect(0,0,0,2)"/>
+
+		<!-- Misc. Command Buttons -->
+		<BitmapView bitmap_id="GFX_GUI_FRIENDLIST_SPLITTER" layout_borders="Rect(5,5,5,5)"/>
+		<TextView value="         Actions" layout_borders="Rect(5,5,5,5)"/>
+		<BitmapView bitmap_id="GFX_GUI_FRIENDLIST_SPLITTER" layout_borders="Rect(5,5,5,5)"/>
+		<View v_alignment="TOP" h_alignment="LEFT" view_layout="vertical" layout_borders="Rect(5,5,5,5)" max_size="Point(200,1)">
+			<button name="FlowControlModule_t::DebugCrashAnarchyMessage1()" label="FlowControlModule_t::DebugCrashAnarchyMessage1()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugCrashAnarchyMessage2()" label="FlowControlModule_t::DebugCrashAnarchyMessage2()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugCrashAnarchyMessage3()" label="FlowControlModule_t::DebugCrashAnarchyMessage3()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugCrashAnarchyMessage4()" label="FlowControlModule_t::DebugCrashAnarchyMessage4()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugDisplayAllProgramsMessage()" label="FlowControlModule_t::DebugDisplayAllProgramsMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugDisplayInfoMessage()" label="FlowControlModule_t::DebugDisplayInfoMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugDisplayRunningProgramsMessage()" label="FlowControlModule_t::DebugDisplayRunningProgramsMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugFramerateToggleMessage()" label="FlowControlModule_t::DebugFramerateToggleMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugFrustum()" label="FlowControlModule_t::DebugFrustum()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugInputModeMessage()" label="FlowControlModule_t::DebugInputModeMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugLoadTweakValues()" label="FlowControlModule_t::DebugLoadTweakValues()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugMemoryToggleMessage()" label="FlowControlModule_t::DebugMemoryToggleMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugMouseWorldPosMessage()" label="FlowControlModule_t::DebugMouseWorldPosMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugNextPageInfoMessage()" label="FlowControlModule_t::DebugNextPageInfoMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugPosToChatExtMessage()" label="FlowControlModule_t::DebugPosToChatExtMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugPosToChatMessage()" label="FlowControlModule_t::DebugPosToChatMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugPrevPageInfoMessage()" label="FlowControlModule_t::DebugPrevPageInfoMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugRender()" label="FlowControlModule_t::DebugRender()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugRender_BVolume()" label="FlowControlModule_t::DebugRender_BVolume()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugRender_Edge()" label="FlowControlModule_t::DebugRender_Edge()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugRender_PrimCount()" label="FlowControlModule_t::DebugRender_PrimCount()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugRender_Vertex()" label="FlowControlModule_t::DebugRender_Vertex()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::DebugReportBugMessage()" label="FlowControlModule_t::DebugReportBugMessage()" layout_borders="Rect(5,5,3,5)"/>
+			<button name="FlowControlModule_t::GmLevelChangedMessage()" label="FlowControlModule_t::GmLevelChangedMessage()" layout_borders="Rect(5,5,3,5)"/>
+		</View>
+		<TextView value=" " layout_borders="Rect(5,5,5,5)"/>
+	</BorderView>
+</root>

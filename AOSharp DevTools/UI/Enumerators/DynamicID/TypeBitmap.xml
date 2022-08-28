@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<root>
+	<BorderView v_alignment="" h_alignment="CENTER" view_layout="vertical" name="Enumerator" layout_borders="Rect(5,5,3,5)" min_size="Point(300, 600)" max_size="Point(16000,-1)">
+		<HLayoutSpacer/>
+		<View layout_borders="Rect(0,5,5,5)" v_alignment="BOTTOM" view_layout="horizontal" max_size="Point(200,1)" min_size="Point(200,1)">
+			<BitmapView bitmap_id="" name="bmvPreview" layout_borders="Rect(5,5,5,5)" />
+		</View>
+		<HLayoutSpacer/>
+		<View v_alignment="BOTTOM" view_layout="vertical">
+			<View h_alignment="LEFT" view_layout="horizontal">
+				<TextView layout_borders="Rect(5,5,5,5)" name="tvIdName"/>
+			</View>
+			<View h_alignment="LEFT" view_layout="horizontal">
+				<Slider layout_borders="Rect(5,5,5,5)" max_value="796" min_value="0" min_size="Point(300,-1)" name="slideSelect"/>
+				<TextInputView feature_flags="TVF_NUMERIC" value="0" label="" layout_borders="Rect(5,5,5,5)" max_size="Point(50,-1)" min_size="Point(50,-1)" name="tivId"/>
+				<Button name="btnSetId" label="Set" layout_borders="Rect(5,5,5,5)"/>
+			</View>
+			<View h_alignment="LEFT" view_layout="horizontal">
+				<Button name="btnDecreaseId" label="Decrease" layout_borders="Rect(5,5,3,5)"/>
+				<Button name="btnIncreaseId" label="Increase" layout_borders="Rect(5,5,3,5)"/>
+			</View>
+		</View>
+	</BorderView>
+</root>

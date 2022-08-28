@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<root>
+	<View view_layout="vertical" name="parent">
+		<BorderView v_alignment="TOP" h_alignment="LEFT" view_layout="vertical" name="DevTools_ControlPanel" layout_borders="Rect(5,5,5,5)" max_size="Point(16000,-1)">
+			<TextView value=" " layout_borders="Rect(5,5,5,5)"/>
+
+			<!-- Open Subsections -->
+			<BitmapView bitmap_id="GFX_GUI_FRIENDLIST_SPLITTER" layout_borders="Rect(5,5,5,5)"/>
+			<TextView value="         Navigation" layout_borders="Rect(5,5,5,5)"/>
+			<BitmapView bitmap_id="GFX_GUI_FRIENDLIST_SPLITTER" layout_borders="Rect(5,5,5,5)"/>
+			<View v_alignment="TOP" h_alignment="CENTER" view_layout="horizontal" layout_borders="Rect(5,5,5,5)" max_size="Point(200,1)">
+				<Button name="Open_Modules" label="Modules" layout_borders="Rect(5,5,3,5)"/>
+				<Button name="Open_Events" label="Events" layout_borders="Rect(5,5,3,5)"/>
+				<Button name="Open_Enumerators" label="Enumerators" layout_borders="Rect(5,5,3,5)"/>
+			</View>
+			<TextView value=" " layout_borders="Rect(5,5,5,5)"/>
+
+			<!-- Misc. Command Buttons -->
+			<BitmapView bitmap_id="GFX_GUI_FRIENDLIST_SPLITTER" layout_borders="Rect(5,5,5,5)"/>
+			<TextView value="         Custom Actions" layout_borders="Rect(5,5,5,5)"/>
+			<BitmapView bitmap_id="GFX_GUI_FRIENDLIST_SPLITTER" layout_borders="Rect(5,5,5,5)"/>
+			<View v_alignment="TOP" h_alignment="CENTER" view_layout="horizontal" layout_borders="Rect(5,5,5,5)" max_size="Point(200,1)">
+				<Button name="Run_Action1" label="Action 1" layout_borders="Rect(5,5,3,5)"/>
+				<Button name="Run_Action2" label="Action 2" layout_borders="Rect(5,5,3,5)"/>
+				<Button name="Run_Action3" label="Action 3" layout_borders="Rect(5,5,3,5)"/>
+				<Button name="Run_Action4" label="Action 4" layout_borders="Rect(5,5,3,5)"/>
+
+			</View>
+			<TextView value=" " layout_borders="Rect(5,5,5,5)"/>
+
+			<!-- Help and About button -->
+			<BitmapView bitmap_id="GFX_GUI_FRIENDLIST_SPLITTER" layout_borders="Rect(5,5,5,5)"/>							<!-- x, y-->
+			<View v_alignment="TOP" h_alignment="CENTER" view_layout="horizontal" layout_borders="Rect(5,5,5,5)" max_size="Point(200,1)">
+				<Button name="Open_Options" label="Options" layout_borders="Rect(5,5,3,5)"/>
+				<Button name="Open_About" label="About" layout_borders="Rect(5,5,3,5)"/>
+				<Button name="Open_Help" label="Help" layout_borders="Rect(5,5,3,5)"/>
+			</View>
+		</BorderView>
+	</View>
+</root>
