@@ -126,14 +126,14 @@ namespace DevTools.GUIControllers
                             {
                                 btnAction1.Tag = UIView;
                                 btnAction1.Clicked = (object s, ButtonBase button) => {
-                                    
+                                    Chat.WriteLine("Use this button for testing your own stuff!");
                                 };
                             }
                             if (UIView.FindChild("Run_Action2", out Button btnAction2))
                             {
                                 btnAction2.Tag = UIView;
                                 btnAction2.Clicked = (object s, ButtonBase button) => {
-                                    
+                                    Chat.WriteLine("Use this button for testing your own stuff!");
                                 };
                             }
                             if (UIView.FindChild("Run_Action3", out Button btnAction3))
