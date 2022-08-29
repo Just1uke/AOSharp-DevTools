@@ -4,21 +4,19 @@ A collection of helpful resources for developing AOSharp plugins.
 
 ### Screenshots
 
+Main contronl panel.
 ![Main tool window](images/main_window.png)
 
-Main contronl panel.
-
+Enumerate various constants, such as UI graphics.
 ![Enumerate graphics](images/graphics_enumerator.png)
 
-Enumerate various constants, such as UI graphics.
-
-![Launch functions from various modules](images/modules.png)
 
 Run functions from various DLLs.
+![Launch functions from various modules](images/modules.png)
 
-![Turn event monitoring on and off](images/events_window.png)
 
 Toggle event handling on and off. In this example, print inbound and outbound packets to chat.
+![Turn event monitoring on and off](images/events_window.png)
 
 ### Known Issues
 
