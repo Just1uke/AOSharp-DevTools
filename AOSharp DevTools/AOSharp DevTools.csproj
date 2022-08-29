@@ -85,10 +85,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Managed\TiXml\" />
-    <Folder Include="Overwrites\GUI\" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="UI\Enumerators.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -81,7 +81,6 @@ namespace DevTools.GUIControllers.Enumerators.DynamicID
                         btnDecreaseId.Tag = outView;
                         btnDecreaseId.Clicked = (object s, ButtonBase button) => {
                             ChangeValue(outView, curSliderValue - 1);
-                            Chat.WriteLine("Decrease");
                         };
                     }
                     if (outView.FindChild("btnIncreaseId", out AOSharp.Core.UI.Button btnIncreaseId))
