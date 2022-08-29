@@ -2,6 +2,10 @@
 
 A collection of helpful resources for developing AOSharp plugins.
 
+### Note
+
+Plugins and development should only take place on [TestLive](https://forums.funcom.com/t/welcome-to-testlive/6433). Use at your own risk.
+
 ### Screenshots
 
 Main contronl panel.
